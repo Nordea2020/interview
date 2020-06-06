@@ -26,6 +26,7 @@ public class FizzBuzzDemo {
 		Stream<Integer> infiniteStream = Stream.iterate(2, i -> i * 2);
 		List<Integer> collect = infiniteStream.skip(3).limit(5).collect(Collectors.toList());
 		System.out.println(collect);
+System.out.println();
 
 	}
 
