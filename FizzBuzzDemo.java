@@ -28,6 +28,7 @@ public class FizzBuzzDemo {
 		System.out.println(collect);
 		
 		System.out.println("Added a print statement");
+		System.out.println("I belongs to develop branch now");
 	}
 
 }
