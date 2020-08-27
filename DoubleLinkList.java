@@ -22,13 +22,12 @@ public class DoubleLinkList {
 		if (head != null) {
 			head.prev = newNode;
 		}
-
 		head = newNode;
 	}
 
 	void insertAfter(Node prevNode, int data) {
 		if (prevNode == null) {
-			System.out.println("prevNode can not be null");
+			System.out.println("prevNode cannot be null");
 		}
 
 		Node newNode = new Node(data);
@@ -66,7 +65,6 @@ public class DoubleLinkList {
 		}
 	}
 
-	/* Driver program to test above functions */
 	public static void main(String[] args) {
 		/* Start with the empty list */
 		DoubleLinkList dll = new DoubleLinkList();
