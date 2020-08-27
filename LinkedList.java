@@ -36,14 +36,14 @@ public class LinkedList {
 		Node currentNode = list.head;
 		Node prev = null;
 
-		// if head to be deleted
+		// if first node (head) to be deleted
 		if (currentNode != null && currentNode.data == data) {
 			list.head = currentNode.next;
 			System.out.println(data + " found and Deleted");
 			return list;
 		}
 
-		// search the node and delete it
+		// search the node and delete node
 		while (currentNode != null && currentNode.data == data) {
 			prev = currentNode;
 			currentNode = currentNode.next;
@@ -55,7 +55,6 @@ public class LinkedList {
 		} else {
 			System.out.println(data + " not found");
 		}
-
 		return list;
 	}
 }
